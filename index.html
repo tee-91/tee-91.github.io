@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Country Information</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Link below, imports pre-designed toast notification to the webpage -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+  </head>
+  <body>
+    <div class="user-search">
+      <h1>Country Information</h1>
+      <p>Enter the name of a country:</p>
+      <input type="text" id="countryName" placeholder="e.g. France" />
+      <button onclick="getCountry()">Search</button>
+    </div>
+    <div id="result"></div>
+    <iframe
+      id="mapFrame"
+      width="100%"
+      height="400"
+      style="border: 0"
+      loading="lazy"
+    ></iframe>
+    <script src="./js/script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+:root {
+  --light: #cee776;
+  --primary: #8ba821;
+  --secondary: #4d8526;
+  --accent: #285e74;
+  --dark: #071e28;
+}
+
+input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: var(--dark);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.user-search {
+  text-align: center;
+}
+
+.card {
+  max-width: 500px;
+  border: none;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 2rem auto;
+}
+
+.card #flags {
+  width: 80%;
+  margin: 10%;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.card-body .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.grid-container div {
+  border: 2px solid var(--primary);
+  background-color: #f8fbf2;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.grid-container p {
+  text-align: center;
+}
+
+.grid-container strong {
+  color: var(--dark);
+}
+
+div .wide {
+  transform: translateX(50%);
+  margin-bottom: 20px;
+}
+
+.card h1 {
+  padding-left: 2.5%;
+  padding-bottom: 5px;
+  color: var(--dark);
+  border-bottom: 3px solid var(--primary);
+}
+
+.card-body {
+  margin: 15px;
+}
